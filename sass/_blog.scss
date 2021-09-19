@@ -1,0 +1,78 @@
+.hero{
+    background-color: #584b4f;
+    justify-content: center;
+    display: grid;
+    &__title{
+        font-size: 60px;
+        color: $color-narranjaBordes;
+        padding: 15px -30px;
+        border-bottom: 2px solid $color-narranjaBordes;
+    }
+    &__section{
+        display: flex;
+        justify-content: center;
+        &--article{
+            border: 5px solid gray;
+            margin: 20px 10px;
+            opacity: .65;
+            padding: 0px;
+            a{
+                color: white;
+                padding: 5px;
+                font-weight: 600;
+                font-size: 26px;
+                text-decoration: none;
+                height: 234px;
+                display: flex;
+                align-items: flex-end;
+            }
+            &-poster{
+                background-size: cover;
+                background-position: center;
+                height: auto;
+                background-repeat: no-repeat;
+            }
+            .poster1{
+                background-image: url('../images/article1.webp');
+            }
+            .poster2{
+                background-image: url('../images/article2.webp');
+            }
+            .poster3{
+                background-image: url('../images/article3.webp');
+            }   
+        }
+        &--article:hover{
+            opacity: 1;
+            border: 5px solid greenyellow;
+        }
+    }
+}
+.post{
+    background-color: $color-blanco;   
+    &__title{
+        font-size: 60px;
+        padding: 10px;
+    }
+
+    &__article--title{
+        text-decoration: none;
+        padding: 5px ;
+    }
+    .btn{
+        margin: 10px 5px;
+        background-color: $color-celeste;
+        color: #FFF;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__img{
+        padding: 10px;
+        width: 40%;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+}

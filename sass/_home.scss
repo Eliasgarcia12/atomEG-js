@@ -1,0 +1,103 @@
+.lead__home{
+    .iphone{
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+
+        &__container{
+            border: 16px solid $color-iphoneBordes;
+            background-color: $color-iphoneBordes;
+            font-size: 0;
+            max-width: 280px;
+            min-height: 568px;
+            border-radius: 43px;
+
+            &--notch{
+                position: absolute;
+                margin: -2px;
+            }
+
+            video{
+                border-radius: 21px;
+                width: 100%!important;
+                height: 100%;
+            }
+        }
+    }
+    &--text{
+        padding: 20px;
+        
+        h1{
+            color: $color-marron;
+            font-size: 60px;
+        }
+        p{
+            font-size: 25px;
+        }
+
+        &--form{
+            padding: 20px 0px;
+            input{
+                padding: 2px 15px;
+                font-size: 20px;
+                height: 43px;
+                width: 300px;
+                border-radius: 15px;
+                border: 2px solid $color-narranjaBordes;
+                outline: none;
+            }
+        }
+
+        &--button{
+            height: auto;
+            width: 150px;
+            font-size: 20px;
+            color: $color-blanco;
+            background-color: $color-marron;
+            font-family: $font-georema;
+            border-radius: 25px;
+            padding: 5px 10px;
+        }
+        &--button:hover{
+            box-shadow: -1px 5px 10px 8px rgba(0, 0, 0, 0.336);
+
+        }
+    }
+}
+
+.products{
+    display: grid;
+    justify-content: center;
+    opacity: .8;
+    padding: 20px 10px;
+    color: $color-narranjaBordes;
+    align-items: center;
+    background-image: url('../images/proyect-background.svg');
+    background-size: cover;
+    background-position: -550px;
+    background-repeat: no-repeat;
+    background-color: #343233;
+    border-top: 2px solid #ffd152;
+
+    .card{ 
+        color: $color-marron;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+    &__cardImg{
+        padding: 10px;
+        max-width: 200px;
+    }
+
+    &__videoContainer{
+        display: flex;
+        justify-content: center;
+
+        &--video{
+            border: 20px solid $color-iphoneBordes;
+            background-color: $color-iphoneBordes;
+            border-radius: 21px;
+
+        }
+    }
+}

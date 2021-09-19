@@ -1,0 +1,38 @@
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 5px;
+    background-color: $color-footer;
+    color: white;
+    background-image: url(../images/products.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+    align-content: center;
+    &__logo{
+        padding: 50px 5px;
+    }
+
+    &__copyright{
+        p{
+            font-size: medium;
+        }
+    }
+    &__menu{
+        &--pages{
+            margin: 20px 0px;
+            list-style: none;
+            text-transform: uppercase;            
+            li{
+                padding-bottom: 5px;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-family: $font-georema;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

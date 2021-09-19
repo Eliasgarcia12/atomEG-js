@@ -1,0 +1,42 @@
+.header{
+    display: block;
+    
+    &__logo{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        &--img{
+            max-width: 160px;
+            padding: 10px 20px;
+        }
+    }
+
+    &__menu{
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        &--principal{
+            margin: 10px;
+            list-style: none;
+            text-transform: uppercase;
+            display: inline-flex;
+            padding: 5px;
+            align-items: center;
+            background-color: $color-marron;
+            border-radius: $border-button;
+            
+            a{
+                font-family: $font-georema;
+                text-decoration: none;
+                color: $color-blanco;
+                padding: 5px 20px;
+                font-weight: 600;
+            }
+
+            li:hover{
+                transform: scale(1.3);
+            }
+        }
+    }
+}

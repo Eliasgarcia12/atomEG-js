@@ -1,0 +1,20 @@
+// // Importando estilos base
+@import "tipography";
+
+// Importando variables
+@import "variables";
+
+
+// // Importando estilos en comun de layout
+@import "header";
+@import "leadContainer";
+@import "footer";
+
+
+// // Importando estilos predefinidos para cada pagina
+@import "about";
+@import "blog";
+@import "contact";
+@import "jobs";
+@import "home";
+
