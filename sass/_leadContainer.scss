@@ -1,6 +1,6 @@
 .lead{
     color: $color-blanco;
-    border-radius: 50px 0 0 0;
+    border-radius: $border-button*2 0 0 0;
     padding-top: 40px;
     background-color: $color-marron;
     display: grid;

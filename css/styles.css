@@ -34,6 +34,7 @@
 }
 
 .header__menu--principal {
+  background-color: #584b4f;
   margin: 10px;
   list-style: none;
   text-transform: uppercase;
@@ -44,8 +45,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #584b4f;
-  border-radius: 25px;
+  border-radius: 12.5px;
 }
 
 .header__menu--principal a {

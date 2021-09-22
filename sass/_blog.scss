@@ -32,20 +32,31 @@
                 height: auto;
                 background-repeat: no-repeat;
             }
-            .poster1{
-                background-image: url('../images/article1.webp');
-            }
-            .poster2{
-                background-image: url('../images/article2.webp');
-            }
-            .poster3{
-                background-image: url('../images/article3.webp');
-            }   
+            //  .poster1{
+            //      background-image: url('../images/article1.webp');
+            //  }
+            //  .poster2{
+            //      background-image: url('../images/article2.webp');
+            //  }
+            //  .poster3{
+            //      background-image: url('../images/article3.webp');
+            //  }   
+            // MAP poster hero
+             $poster:(poster1: url('../images/article1.webp') , poster2: url('../images/article2.webp'), poster3: url('../images/article3.webp'));
+
+             @each $clave, $valor in $poster {
+                 .#{$clave}{
+                     background-image: $valor;
+                 }
+             }
+
+            
         }
         &--article:hover{
             opacity: 1;
             border: 5px solid greenyellow;
         }
+
     }
 }
 .post{

@@ -13,18 +13,34 @@
     }
 
     &__menu{
+        
         display: flex;
         justify-content: center;
         padding: 5px;
         &--principal{
+            // CONDICION PARA ESTILO DEL MENU
+            // Tipos de valores aceptados: negro, celeste
+            // Color por defecto marron (valor de variable $color-marron)
+            $type: marron;
+            @if $type == negro{
+                background-color: #000;
+                }
+            @else if $type == celeste {
+                background-color: $color-celeste;
+            }
+            @else{ 
+                background-color: $color-marron;
+            }
+
+
             margin: 10px;
             list-style: none;
             text-transform: uppercase;
             display: inline-flex;
             padding: 5px;
             align-items: center;
-            background-color: $color-marron;
-            border-radius: $border-button;
+            // background-color: $color-marron;
+            border-radius: $border-button /2 ;
             
             a{
                 font-family: $font-georema;
