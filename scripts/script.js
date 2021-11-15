@@ -22,7 +22,28 @@ class Usuario {
 	}
 }
 // -------------------------------------------------------------------------------------------------------------------------------------------------
-
+// Array de servicios con su informacion
+const servicios = [
+	{
+		id: 1,
+		nombre: "Hosting sencillo",
+		precio: 799,
+		descripcion: "Certificado SSL, 30GB de almacenamiento, 1 sitio web",
+	},
+	{
+		id: 2,
+		nombre: "Hosting Premium",
+		precio: 999,
+		descripcion: "Certificado SSL, Dominio gratis, 100 GB de almacenamiento, 100 sitios web",
+	},
+	{
+		id: 3,
+		nombre: "Hosting empresarial",
+		precio: 1299,
+		descripcion: "Certificado SSL, Acceso GIT, Email gratis, Dominio gratis, 250 GB de almacenamiento, Ancho de banda ilimitado",
+	},
+]
+// ---------------------------------------------------------------------------------------------------------------
 // Se declara el array vacio que va a contener los objetos creados por cada usuario registrado
 const listaUsuarios = [];
 
@@ -124,13 +145,23 @@ function bienvenida(){
 
 	return usuarioNuevo
 }
+// -------------------------------------------------------------------------------
 
 
+const servicio1 = document.getElementsByClassName("servicio")[0]
+const servicio2 = document.getElementsByClassName("servicio")[1]
+const servicio3 = document.getElementsByClassName("servicio")[2]
 
+let contador = 0
+servicios.forEach((service)=>{
+	let dataTitulo = service.nombre
+	let servicioTitulo = document.getElementsByClassName("servicioTitulo")[contador]
+	let dataDescripcion = service.descripcion
+	let servicioDescripcion = document.getElementsByClassName("servicioDescripcion")[contador]
+	servicioDescripcion.innerText = dataDescripcion
+	servicioDescripcion.innerHTML = `<p>${dataDescripcion}</p>
+									 <p><strong>Precio: $${service.precio}</strong></p>`;
+	servicioTitulo.innerText = dataTitulo
 
-// Testing---------------------
-
-// listaUsuarios.push(new Usuario('gareli', 'Elias Garcia', 1))
-// listaUsuarios.push(new Usuario('salchipap', 'Esteban Quito', 2))
-// listaUsuarios.push(new Usuario('gorrion', 'Mateo Ameal', 1))
-// listaUsuarios.push(new Usuario('juanchi', 'Juan Cruz', 3))
+	contador++
+})
